@@ -1,0 +1,27 @@
+# Dev environment
+.DS_Store
+.idea
+
+# Drupal scaffolding
+drush/contrib
+vendor
+bin
+docroot/core
+docroot/libraries
+docroot/modules/contrib
+docroot/themes/contrib
+docroot/profiles/contrib
+
+# File directories
+docroot/sites/default/files
+private/*
+tmp/*
+docroot/sites/*/files
+docroot/sites/*/private
+
+# Configuration files
+docroot/sites/*/settings.local.php
+docroot/sites/*/services*.yml
+
+# Acquia configs
+docroot/sites/*.dd
