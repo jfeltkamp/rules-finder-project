@@ -14,7 +14,7 @@ for your setup.
 After that you can create the project:
 
 ```
-composer create-project jfeltkamp/argue-project argue
+composer create-project jfeltkamp/argue-project -s dev argue
 ```
 
 The `composer create-project` command passes ownership of all files to the 
