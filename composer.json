@@ -1,6 +1,6 @@
 {
   "name": "jfeltkamp/argue-project",
-  "description": "Argue project template composer",
+  "description": "Argue project template with composer",
   "type": "project",
   "license": "GPL-2.0+",
   "authors": [
@@ -20,54 +20,57 @@
     }
   ],
   "require": {
-    "jfeltkamp/argue": "dev-8.x-1.x",
-    "composer/installers": "^1.2",
-    "oomphinc/composer-installers-extender": "^1.1",
-    "monolog/monolog": "~1.0",
-    "drupal-composer/drupal-scaffold": "^2.2",
-    "cweagans/composer-patches": "~1.0",
-
-    "drupal/console": "~1.0",
-    "drush/drush": "~8.1.15",
-    "drupal/tour_ui": "~1.0"
+    "jfeltkamp/argue": "2.0.x-dev",
+    "composer/installers": "^1.9",
+    "cweagans/composer-patches": "^1.7",
+    "drupal/core-composer-scaffold": "^9.0",
+    "drush/drush": "^9.0||^10.0",
+    "oomphinc/composer-installers-extender": "^2.0",
+    "vlucas/phpdotenv": "^2.4"
+  },
+  "require-dev": {
+    "drupal/core-dev": "^9.0"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "autoload": {
-    "classmap": [
-      "scripts/composer/ScriptHandler.php"
-    ]
+    "files": ["load.environment.php"]
   },
-  "scripts": {
-    "dependency-cleanup": [
-      "Argue\\composer\\ScriptHandler::dependencyCleanup"
-    ],
-    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-    "post-install-cmd": [
-      "Argue\\composer\\ScriptHandler::buildScaffold",
-      "Argue\\composer\\ScriptHandler::createRequiredFiles"
-    ],
-    "post-update-cmd": [
-      "Argue\\composer\\ScriptHandler::buildScaffold",
-      "Argue\\composer\\ScriptHandler::createRequiredFiles"
-    ]
-  },
+  "scripts": {},
   "extra": {
-    "installer-types": ["bower-asset"],
+    "composer-exit-on-patch-failure": true,
+    "installer-types": ["bower-asset", "drupal-scripts", "npm-asset"],
     "installer-paths": {
       "docroot/core": ["type:drupal-core"],
       "docroot/libraries/{$name}": [
         "type:drupal-library",
-        "type:bower-asset"
+        "type:bower-asset",
+        "type:npm-asset"
       ],
       "docroot/modules/contrib/{$name}": ["type:drupal-module"],
       "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
       "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
-      "drush/contrib/{$name}": ["type:drupal-drush"]
+      "drush/contrib/{$name}": ["type:drupal-drush"],
+      "scripts/{$name}": ["type:drupal-scripts"]
     },
-    "enable-patching": true
+    "enable-patching": true,
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "docroot/"
+      }
+    }
   },
   "config": {
+    "preferred-install": {
+      "drupal/change_requests": "source",
+      "drupal/entity_form_mode": "source",
+      "jfeltkamp/*": "source",
+      "*": "dist"
+    },
+    "sort-packages": true,
     "bin-dir": "bin/"
   }
 }

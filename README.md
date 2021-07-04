@@ -48,7 +48,7 @@ After that you can run `drush updb` in the docroot folder to update the database
 ### File update
 
 This project will attempt to keep all of your Argue and drupal core files up-to-date; the 
-project [drupal-composer/drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) 
+project [drupal/core-dev](https://github.com/drupal-composer/drupal-scaffold) 
 is used to ensure that your scaffold files are updated every time drupal/core is 
 updated. If you customize any of the "scaffolding" files (commonly .htaccess), 
 you may need to merge conflicts if any of your modfied files are updated in a 

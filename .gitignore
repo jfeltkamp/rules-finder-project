@@ -23,5 +23,11 @@ docroot/sites/*/private
 docroot/sites/*/settings.local.php
 docroot/sites/*/services*.yml
 
-# Acquia configs
+# Ignore SimpleTest multi-site environment.
+docroot/sites/simpletest
+
+# Ignore Acquia Dev Desktop configs.
 docroot/sites/*.dd
+
+# Ignore .env files as they are personal
+/.env
