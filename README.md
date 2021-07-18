@@ -38,7 +38,7 @@ When installing the given `composer.json` some tasks are taken care of:
 
 ## Installing Argue
 
-Create project will install Argue into the docroot direcrory inside of Argue. You can now install Argue as you would with any Drupal 8 site. See: [Drupal installation guide](https://www.drupal.org/node/1839310).
+Create project will install Argue into the docroot direcrory inside of Argue. You can now install Argue as you would with any Drupal 9 site. See: [Drupal installation guide](https://www.drupal.org/node/1839310).
  
 ## Updating Argue
 
@@ -56,7 +56,7 @@ new release of Drupal core.
 
 Follow the steps below to update your Argue files.
 
-1. Run `composer update jfeltkamp/argue`
+1. Run `composer update drupal/argue`
 1. Run `git diff` to determine if any of the scaffolding files have changed. 
    Review the files for any changes and restore any customizations to 
   `.htaccess` or `robots.txt`.
