@@ -20,14 +20,16 @@
     }
   ],
   "require": {
-    "jfeltkamp/argue": "^2.0",
-    "composer/installers": "^1.9",
+    "composer/installers": "^1.12",
     "cweagans/composer-patches": "^1.7",
-    "drupal/core-composer-scaffold": "^9.0",
+    "drupal/core-composer-scaffold": "^9.4",
+    "drupal/core-project-message": "^9.4",
+    "drupal/core-recommended": "^9.4",
     "drush/drush": "^9.0||^10.0",
+    "jfeltkamp/argue": "^2.0",
+    "league/commonmark": "^0.11",
     "oomphinc/composer-installers-extender": "^2.0",
-    "vlucas/phpdotenv": "^2.4",
-    "league/commonmark": "^0.11"
+    "vlucas/phpdotenv": "^2.4"
   },
   "require-dev": {
     "drupal/core-dev": "^9.0"
@@ -66,12 +68,18 @@
   },
   "config": {
     "preferred-install": {
-      "drupal/change_requests": "source",
-      "drupal/entity_form_mode": "source",
-      "jfeltkamp/*": "source",
       "*": "dist"
     },
     "sort-packages": true,
-    "bin-dir": "bin/"
+    "bin-dir": "bin/",
+    "allow-plugins": {
+      "composer/installers": true,
+      "drupal/core-composer-scaffold": true,
+      "cweagans/composer-patches": true,
+      "drupal/console-extend-plugin": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "oomphinc/composer-installers-extender": true,
+      "drupal/core-project-message": true
+    }
   }
 }
