@@ -1,4 +1,4 @@
-# Composer template for Drupal Argue projects
+# Composer template for Drupal RulesFinder projects
 
 This project template should provide a kickstart for managing your site
 dependencies with [Composer](https://getcomposer.org/).
@@ -14,7 +14,7 @@ for your setup.
 After that you can create the project:
 
 ```
-composer create-project jfeltkamp/argue-project -s dev argue
+composer create-project jfeltkamp/rules-finder-project -s dev <my_project_name>
 ```
 
 The `composer create-project` command passes ownership of all files to the 
@@ -36,27 +36,27 @@ When installing the given `composer.json` some tasks are taken care of:
 * Latest version of drush is installed locally for use at `bin/drush`.
 * Latest version of DrupalConsole is installed locally for use at `bin/drupal`.
 
-## Installing Argue
+## Installing RulesFinder
 
-Create project will install Argue into the docroot direcrory inside of Argue. You can now install Argue as you would with any Drupal 9 site. See: [Drupal installation guide](https://www.drupal.org/node/1839310).
+Create project will install RulesFinder into the docroot direcrory inside of RulesFinder. You can now install RulesFinder as you would with any Drupal 9 site. See: [Drupal installation guide](https://www.drupal.org/node/1839310).
  
-## Updating Argue
+## Updating RulesFinder
 
-To update Argue, Drupal or any module to the newest version, constrained by the specified version in `composer.json`, execute `composer update`. This command will check every dependency for a new version, downloads it and updates the `composer.lock` accordingly.
+To update RulesFinder, Drupal or any module to the newest version, constrained by the specified version in `composer.json`, execute `composer update`. This command will check every dependency for a new version, downloads it and updates the `composer.lock` accordingly.
 After that you can run `drush updb` in the docroot folder to update the database of your site.
 
 ### File update
 
-This project will attempt to keep all of your Argue and drupal core files up-to-date; the 
+This project will attempt to keep all of your RulesFinder and drupal core files up-to-date; the 
 project [drupal/core-dev](https://github.com/drupal-composer/drupal-scaffold) 
 is used to ensure that your scaffold files are updated every time drupal/core is 
 updated. If you customize any of the "scaffolding" files (commonly .htaccess), 
 you may need to merge conflicts if any of your modfied files are updated in a 
 new release of Drupal core.
 
-Follow the steps below to update your Argue files.
+Follow the steps below to update your RulesFinder files.
 
-1. Run `composer update drupal/argue`
+1. Run `composer update drupal/rules_finder`
 1. Run `git diff` to determine if any of the scaffolding files have changed. 
    Review the files for any changes and restore any customizations to 
   `.htaccess` or `robots.txt`.

@@ -1,6 +1,6 @@
 {
-  "name": "jfeltkamp/argue-project",
-  "description": "Argue project template with composer",
+  "name": "jfeltkamp/rules-finder-project",
+  "description": "RulesFinder project template with composer",
   "type": "project",
   "license": "GPL-2.0+",
   "authors": [
@@ -25,9 +25,9 @@
     "drupal/core-composer-scaffold": "^9.4",
     "drupal/core-project-message": "^9.4",
     "drupal/core-recommended": "^9.4",
-    "drush/drush": "^9.0||^10.0",
-    "jfeltkamp/argue": "^2.0",
-    "league/commonmark": "^0.11",
+    "drush/drush": "^10.0||^11.0",
+    "drupal/rules_finder": "^1.0",
+    "league/commonmark": "^0.18.3",
     "oomphinc/composer-installers-extender": "^2.0",
     "vlucas/phpdotenv": "^2.4"
   },
