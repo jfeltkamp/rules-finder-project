@@ -29,7 +29,7 @@
     "drupal/core-composer-scaffold": "^9.4",
     "drupal/core-project-message": "^9.4",
     "drupal/core-recommended": "^9.4",
-    "drupal/rules_finder": "1.0.0@beta",
+    "drupal/rules_finder": "1.0@beta",
     "drush/drush": "^10.0||^11.0",
     "oomphinc/composer-installers-extender": "^2.0",
     "vlucas/phpdotenv": "^2.4"
