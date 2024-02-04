@@ -69,11 +69,7 @@
     "drupal-lenient": {
       "allowed-list": ["drupal/userpoints"]
     },
-    "patches": {
-      "drupal/userpoints": {
-        "Issue # D10 comapatibillity": "https://www.drupal.org/files/issues/2022-10-09/userpoints-n3314326-8.patch"
-      }
-    },
+    "patches": {},
     "drupal-scaffold": {
       "locations": {
         "web-root": "docroot/"
