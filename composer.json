@@ -74,6 +74,12 @@
   },
   "config": {
     "preferred-install": {
+      "drupal/arguments": "source",
+      "drupal/change_requests": "source",
+      "drupal/entity_form_mode": "source",
+      "drupal/gamify": "source",
+      "drupal/rules_finder": "source",
+      "drupal/vote": "source",
       "*": "dist"
     },
     "sort-packages": true,
