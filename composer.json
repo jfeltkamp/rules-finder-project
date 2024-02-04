@@ -31,6 +31,7 @@
     "drupal/core-recommended": "^10.2",
     "drupal/rules_finder": "1.0.x-dev",
     "drush/drush": "^12.4",
+    "mglaman/composer-drupal-lenient": "^1.0.4",
     "oomphinc/composer-installers-extender": "^2.0",
     "vlucas/phpdotenv": "^5.6"
   },
@@ -65,7 +66,14 @@
       "scripts/{$name}": ["type:drupal-scripts"]
     },
     "enable-patching": true,
-    "patches": {},
+    "drupal-lenient": {
+      "allowed-list": ["drupal/userpoints"]
+    },
+    "patches": {
+      "drupal/userpoints": {
+        "Issue # D10 comapatibillity": "https://www.drupal.org/files/issues/2022-10-09/userpoints-n3314326-8.patch"
+      }
+    },
     "drupal-scaffold": {
       "locations": {
         "web-root": "docroot/"
