@@ -17,25 +17,21 @@
     {
       "type": "composer",
       "url": "https://asset-packagist.org"
-    },
-    {
-      "type": "vcs",
-      "url": "git@git.drupal.org:project/rules_finder.git"
     }
   ],
   "require": {
-    "composer/installers": "^1.12",
+    "composer/installers": "^2.2",
     "cweagans/composer-patches": "^1.7",
-    "drupal/core-composer-scaffold": "^9.4",
-    "drupal/core-project-message": "^9.4",
-    "drupal/core-recommended": "^9.4",
-    "drupal/rules_finder": "^1.0@beta",
-    "drush/drush": "^10.0||^11.0",
+    "drupal/core-composer-scaffold": "^10.2",
+    "drupal/core-project-message": "^10.2",
+    "drupal/core-recommended": "^10.2",
+    "drupal/rules_finder": "1.0.x-dev",
+    "drush/drush": "^12.4",
     "oomphinc/composer-installers-extender": "^2.0",
-    "vlucas/phpdotenv": "^2.4"
+    "vlucas/phpdotenv": "^5.6"
   },
   "require-dev": {
-    "drupal/core-dev": "^9.4"
+    "drupal/core-dev": "^10"
   },
   "conflict": {
     "drupal/drupal": "*"
@@ -43,7 +39,9 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "autoload": {
-    "files": ["load.environment.php"]
+    "files": [
+        "load.environment.php"
+    ]
   },
   "scripts": {},
   "extra": {
@@ -83,7 +81,9 @@
       "drupal/console-extend-plugin": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
       "oomphinc/composer-installers-extender": true,
-      "drupal/core-project-message": true
+      "drupal/core-project-message": true,
+      "php-http/discovery": true,
+      "phpstan/extension-installer": true
     }
   }
 }
