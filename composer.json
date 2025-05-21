@@ -17,10 +17,6 @@
     {
       "type": "composer",
       "url": "https://asset-packagist.org"
-    },
-    {
-      "type": "vcs",
-      "url": "git@git.drupal.org:project/rules_finder.git"
     }
   ],
   "require": {
@@ -29,7 +25,7 @@
     "drupal/core-composer-scaffold": "^10.2",
     "drupal/core-project-message": "^10.2",
     "drupal/core-recommended": "^10.2",
-    "drupal/rules_finder": "1.0.x-dev",
+    "drupal/rules_finder": "^1.0@beta",
     "drush/drush": "^12.4",
     "oomphinc/composer-installers-extender": "^2.0",
     "vlucas/phpdotenv": "^5.6"
@@ -74,12 +70,6 @@
   },
   "config": {
     "preferred-install": {
-      "drupal/arguments": "source",
-      "drupal/change_requests": "source",
-      "drupal/entity_form_mode": "source",
-      "drupal/gamify": "source",
-      "drupal/rules_finder": "source",
-      "drupal/vote": "source",
       "*": "dist"
     },
     "sort-packages": true,
