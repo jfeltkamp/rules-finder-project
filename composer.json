@@ -17,6 +17,10 @@
     {
       "type": "composer",
       "url": "https://asset-packagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "https://git.drupalcode.org/project/rules_finder.git"
     }
   ],
   "require": {
