@@ -29,7 +29,7 @@
     "drupal/core-composer-scaffold": "^10.2",
     "drupal/core-project-message": "^10.2",
     "drupal/core-recommended": "^10.2",
-    "drupal/rules_finder": "^1.1@beta",
+    "drupal/rules_finder": "^1.1",
     "drush/drush": "^12.4",
     "oomphinc/composer-installers-extender": "^2.0",
     "vlucas/phpdotenv": "^5.6"
@@ -87,7 +87,8 @@
       "oomphinc/composer-installers-extender": true,
       "drupal/core-project-message": true,
       "php-http/discovery": true,
-      "phpstan/extension-installer": true
+      "phpstan/extension-installer": true,
+      "tbachert/spi": true
     }
   }
 }
