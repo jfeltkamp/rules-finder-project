@@ -26,16 +26,16 @@
   "require": {
     "composer/installers": "^2.2",
     "cweagans/composer-patches": "^1.7",
-    "drupal/core-composer-scaffold": "^10.2",
-    "drupal/core-project-message": "^10.2",
-    "drupal/core-recommended": "^10.2",
-    "drupal/rules_finder": "^1.1",
-    "drush/drush": "^12.4",
+    "drupal/core-composer-scaffold": "^11.3",
+    "drupal/core-project-message": "^11.3",
+    "drupal/core-recommended": "^11.3",
+    "drupal/rules_finder": "^2.0",
+    "drush/drush": "^13.7",
     "oomphinc/composer-installers-extender": "^2.0",
     "vlucas/phpdotenv": "^5.6"
   },
   "require-dev": {
-    "drupal/core-dev": "^10"
+    "drupal/core-dev": "^11.3"
   },
   "conflict": {
     "drupal/drupal": "*"
@@ -44,7 +44,7 @@
   "prefer-stable": true,
   "autoload": {
     "files": [
-        "load.environment.php"
+      "load.environment.php"
     ]
   },
   "scripts": {},
