@@ -16,6 +16,7 @@ docroot/profiles/contrib
 # File directories
 docroot/sites/default/files
 private/*
+!private/.gitkeep
 tmp/*
 docroot/sites/*/files
 docroot/sites/*/private

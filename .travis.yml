@@ -5,7 +5,7 @@ services:
   - mysql
 
 php:
-  - 8.3
+  - 8.4
 
 env:
   global:
