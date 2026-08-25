@@ -31,7 +31,6 @@
     "drupal/core-recommended": "^11.4",
     "drupal/rules_finder": "^2.0",
     "drush/drush": "^13.7",
-    "npm-asset/yaireo--tagify": "4.35.4",
     "oomphinc/composer-installers-extender": "^2.0",
     "vlucas/phpdotenv": "^5.6"
   },
